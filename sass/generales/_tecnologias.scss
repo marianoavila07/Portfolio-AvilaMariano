@@ -1,0 +1,14 @@
+@use "../generales/variables" as*;
+
+@mixin icono-tecnologia {
+    width: 50px;
+    height: 50px;
+    box-shadow: $sombras;
+    padding: 10px;
+}
+
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

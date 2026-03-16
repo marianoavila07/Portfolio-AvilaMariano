@@ -3,18 +3,19 @@
     header {
         justify-content: start;
     }
-
     .grid-container {
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: auto;
+        grid-template-columns: repeat(1, 1fr);
         gap: 1.5rem;
-        padding: 2rem;  
-            .card { 
-                width: auto; 
-            }
-
+        padding: 2rem;
+        width: 100%;
+        height: auto;
+        .card h5 {
+            font-size: 1.2rem;
+        }
+        .card p {
+            font-size: 0.95rem;
+        }
     }
-
     .presentacion {
         flex-direction: column;
         text-align: center;
@@ -23,19 +24,24 @@
     .rol { 
         font-size: 1.3rem; 
     }
+
     .descripcion { 
         font-size: 1.1rem; 
     }
+
     .contacto { 
         padding: 2rem; 
     }
+
     .form-contacto { 
         grid-template-columns: 1fr 1fr; 
     }
 }
 
+
 /* Celulares */
 @media (max-width: 600px) {
+
     header { 
         justify-content: start; 
     }
@@ -47,21 +53,26 @@
 
     .grid-container {
         grid-template-columns: 1fr;
-        gap: 3rem;
+        gap: 2rem;
         padding: 1rem;
+        width: 85%;
+        height: auto;
+        
+        .card h5 {
+            font-size: 1.05rem;
+        }
+        .card p {
+            font-size: 0.9rem;
+        }
     }
-
-    .card { 
-        width: auto; 
-        margin: 0; }
-
     .form-contacto { 
         display: block; 
     }
 
     label { 
         margin-top: 1rem; 
-        display: block; }
+        display: block; 
+    }
 
     footer p { 
         font-size: 1rem; 
